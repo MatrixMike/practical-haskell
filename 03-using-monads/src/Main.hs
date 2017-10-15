@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -fwarn-missing-signatures #-}
+main :: IO()
 main = do
   let action = putStrLn "Hello World"
   action

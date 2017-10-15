@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -fwarn-missing-signatures #-}
 module Main where
 
 import Data.Time (getCurrentTime)
@@ -10,6 +11,7 @@ main = do
     printNumbers
     printConfig
 
+greet :: [Char] -> [Char]
 greet name = "Hello " ++ name ++ "!"
 
 printNumbers = do
