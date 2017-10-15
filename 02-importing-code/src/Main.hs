@@ -10,6 +10,8 @@ main = do
     printTime
     printNumbers
     printConfig
+    printConfig2
+    
 
 greet :: [Char] -> [Char]
 greet name = "Hello " ++ name ++ "!"
@@ -19,6 +21,10 @@ printNumbers = do
 
 printConfig = do
   contents <- readFile "../stack.yaml"
+  putStrLn contents
+
+printConfig2 = do
+  contents <- readFile "../my-project.cabal"
   putStrLn contents
 
 printTime = do
