@@ -1,3 +1,13 @@
+Hello bobby!
+Hello World!
+2017-10-15 12:37:38.257157565 UTC
+7
+flags: {}
+packages:
+- '.'
+extra-deps: []
+resolver: lts-3.1
+
 name:                my-project
 version:             0.1.0.0
 synopsis:            My first Haskell Project
@@ -16,3 +26,4 @@ executable my-project
   build-depends:       base,
                        time,
                        aeson
+
