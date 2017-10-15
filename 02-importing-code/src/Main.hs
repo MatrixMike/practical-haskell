@@ -7,6 +7,8 @@ main = do
     putStrLn (greet "bobby")
     putStrLn (greet "World")
     printTime
+    printNumbers
+    printConfig
 
 greet name = "Hello " ++ name ++ "!"
 
@@ -14,7 +16,7 @@ printNumbers = do
   putStrLn (show (3+4))
 
 printConfig = do
-  contents <- readFile "stack.yaml"
+  contents <- readFile "../stack.yaml"
   putStrLn contents
 
 printTime = do
