@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -fwarn-missing-signatures #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
 
@@ -7,6 +8,11 @@ import Data.Monoid ((<>))
 import Data.Aeson (FromJSON, ToJSON)
 import GHC.Generics
 import Web.Scotty
+
+{-
+cabal install scotty
+https://www.haskell.org/hoogle/?hoogle=web.scotty
+-}
 
 data User = User { userId :: Int, userName :: String } deriving (Show, Generic)
 instance ToJSON User

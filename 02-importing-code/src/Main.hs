@@ -1,7 +1,7 @@
 {-# OPTIONS_GHC -fwarn-missing-signatures #-}
 module Main where
 
-import Data.Time (getCurrentTime)
+import Data.Time (getCurrentTime, gregorianMonthLength, isLeapYear )
 import System.IO (readFile)
 
 main = do
@@ -11,6 +11,8 @@ main = do
     printNumbers
     printConfig
     printConfig2
+ --   print isLeapYear 2017
+    
     
 
 greet :: [Char] -> [Char]
@@ -30,4 +32,14 @@ printConfig2 = do
 printTime = do
   time <- getCurrentTime
   putStrLn (show time)
+{-
+https://hackage.haskell.org/package/time-1.8.0.3/docs/Data-Time-Clock.html
+getCurrentTime :: IO UTCTime
 
+Get the current UTCTime from the system clock.
+-}
+printTime2 = do
+--  time <- gregorianMonthLength (2017, 10)
+--  putStrLn (show time)
+    print 5
+    
