@@ -5,6 +5,7 @@ module Main where
 import Data.Time (getCurrentTime, gregorianMonthLength, isLeapYear)
 import System.IO (readFile)
 
+main :: IO ()
 main = do
   putStrLn (greet "bobby")
   putStrLn (greet "World")
@@ -17,6 +18,7 @@ main = do
 greet :: [Char] -> [Char]
 greet name = "Hello " ++ name ++ "!"
 
+printNumbers :: IO ()
 printNumbers = do
   putStrLn (show (3 + 4))
 
