@@ -6,3 +6,6 @@ cabal install scotty
 https://www.haskell.org/hoogle/?hoogle=web.scotty
 -}
 
+section 04 : rest : is particularly instructive and may be built with geany or ./stsackSeq 
+execute : ./04-rest-api/src/Main 
+
